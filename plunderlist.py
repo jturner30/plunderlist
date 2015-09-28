@@ -32,6 +32,7 @@ def get_tasks_titles(tasks):
 
 
 def build_task_list():
+    import pdb; pdb.set_trace()
     lists = get_lists()
     pairs = get_list_id_title_pairs(lists)
     d = defaultdict(list)
