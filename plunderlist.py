@@ -1,9 +1,10 @@
 import requests
 import json
+import os
 from collections import defaultdict
 
-access_token = 'd2f83cc7227a32f0503ef692e60d76ac7e496935a374cdce4731740213e3'
-client_id = '6d8fbbde4fcf3153e491'
+access_token = os.environ.get('WUNDERLIST_ACCESS_TOKEN')
+client_id = os.environ.get('WUNDERLIST_CLIENT_ID')
 headers = {'X-Access-Token': access_token, 'X-Client-ID': client_id}
 sep = u'\u2502'
 last_bar = u'\u2514\u2500\u2500'
